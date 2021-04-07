@@ -1,31 +1,25 @@
 'use strict';
 
-// const category = 'toys';
+//Lesson 25. Отлавливаем ошибки в своем коде при помощи консоли разработчика. Breakpoints
 
-// console.log(`https://someurl.com/${category}/5`);
+function hello() {
+    console.log('Hello world!');
+    debugger;
+}
 
-// const user = 'Ivan';
+hello();
 
-// alert(`Привет, ${user}`);
+function hi() {
+    console.log('Say hi!');
+}
 
+hi();
 
-// console.log('arr' + "- object");
-// console.log(3 + "4");
+const arr = [1, 14, 4, 30, 54],
+    sorted = arr.sort(compareNum);
 
-// let incr = 10,
-//     decr = 10;
+function compareNum(a, b) {
+    return a - b;
+}
 
-// ++incr;
-// --decr;
-
-// console.log(++incr);
-// console.log(--decr);
-
-// console.log(5%2);
-
-console.log(2 + 2 * 2 !== '6');
-
-const isChecked = false, 
-      isClose = false;
-
-console.log(isChecked || !isClose);
+console.log(sorted);
