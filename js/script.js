@@ -22,4 +22,4 @@
 
 // console.log(c);
 
-// console.log([ ] + false - null + true); //NaN
+// console.log([ ] + false - null + true); //NaN 
