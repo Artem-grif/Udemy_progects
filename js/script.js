@@ -1,56 +1,25 @@
 'use strict';
 
-//Lesson 26. Динамическая типизация в JS
+//Lesson 27. Задачи с собеседований на понимание основ
 
-// To String
+// alert ('1'[0]);
 
-// 1)
-// console.log(typeof(String(null)));
-// console.log(typeof(String(4)));
+// console.log(2 && 1 && null && 0 && undefined);
 
-// 2)
-console.log(typeof(5 + ''));
+// alert( null || 2 && 3 || 4 );
 
-const num = 5;
+// const a = [1, 2, 3]; 
+// const b = [1, 2, 3];
 
-console.log('https://vk.com/catalog/' + num);
+// const c = a == b;
+// console.log(c);
 
-const fontSize = 26 + 'px';
+// alert( +"Infinity" );
 
-// To Number
+// console.log(typeof(( +"Infinity" )));
 
-// 1)
-console.log(typeof(Number('4')));
+// const c = 0 || "" || 2 || undefined || true || falsе;
 
-// 2)
-console.log(typeof(+'4'));
+// console.log(c);
 
-// 3)
-console.log(typeof(parseInt('15px', 10)));
-
-
-let answ = +prompt('Hello', '');
-
-
-// To boolean
-
-// 0, '', null, undefined, NaN;
-
-// 1)
-let switcher = null;
-
-if (switcher) {
-    console.log('Working...');
-}
-
-switcher = 1;
-
-if (switcher) {
-    console.log('Working...');
-}
-
-// 2)
-console.log(typeof(Boolean('4')));
-
-// 3)
-console.log(typeof(!!'44444'));
+// console.log([ ] + false - null + true); //NaN
